@@ -4,7 +4,7 @@ const path = require('path');
 const sing= require('./router/sing');
 const log= require('./router/log');
 
-app.set('port', process.env.port || 3000) 
+app.set('port', process.env.port || 1515) 
 app.use(express.json())
 app.get('/', (req, res, next) =>{
     res.send('<h1>Hello world<h1>');
