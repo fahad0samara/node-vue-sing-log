@@ -1,10 +1,14 @@
 const express = require('express');
 const app = express();
+const cors = require('cors')
+
+ 
+
 const path = require('path');
 const sing= require('./router/sing');
 const log= require('./router/log');
-
-app.set('port', process.env.port || 1515) 
+app.use(cors())
+app.set('port', process.env.port || 2020) 
 app.use(express.json())
 app.get('/', (req, res, next) =>{
     res.send('<h1>Hello world<h1>');

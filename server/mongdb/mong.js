@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://fahad:00000@cluster0.qxnsg.mongodb.net/vue?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://fahad:fahad@cluster0.zobfr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
 .then(()=>{
     console.log('connection ');
 }).catch(err => console.log(err));

@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const mongoose = require('./mong')
+const mongoose = require('../mongdb/mong')
 const bcrypt= require('bcrypt');
 
 
