@@ -5,8 +5,9 @@ mongoose.connect('mongodb+srv://fahad:fahad@cluster0.zobfr.mongodb.net/myFirstDa
 }).catch(err => console.log(err));
 const mongodb=new mongoose.Schema({
     user: { type: String},
+    veried: { type:Boolean, required: true, default: false},
     password: { type: String,required: true}},
-    
+
     
   {timestamps: true}
     )
